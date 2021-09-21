@@ -5,6 +5,7 @@ public class Tabeller {
 		int[] table = {1,2,3,4};
 		
 		System.out.println(tilStreng(table));
+		System.out.println(posisjonTall(table, 3));
 	}
 
 	// a) Anders
@@ -48,8 +49,17 @@ public class Tabeller {
 	// e) Fredrik
 	public static int posisjonTall(int[] tabell, int tall) {
 
-		// TODO
-		throw new UnsupportedOperationException("posisjonTall ikke implementert");
+		boolean exists =false;
+		int i=0;
+		while(!exists && i<tabell.length) {
+			if (tabell[i]==tall) {
+				exists=true;
+				
+				return i;
+			}
+			else i++;
+		}
+		return -1;
 
 	}
 
