@@ -36,10 +36,20 @@ public class Tabeller {
 
 	// c) Sivert
 	public static int summer(int[] tabell) {
-
-		// TODO
-		throw new UnsupportedOperationException("summer ikke implementert");
+		int sum = 0;
+		int i = 0;
+		while (i<tabell.length) {
+			sum += tabell[i];
+			i++;
+		}
+		return sum;
 	}
+		
+//		for (int i=0; i<tabell.length; i++) {
+//			sum = tabell[i];
+//		} 
+//		return sum;
+//	}
 
 	// d) Anders
 	public static boolean finnesTall(int[] tabell, int tall) {
