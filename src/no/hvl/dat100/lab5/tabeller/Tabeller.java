@@ -1,6 +1,11 @@
 package no.hvl.dat100.lab5.tabeller;
 
 public class Tabeller {
+	public static void main(String[] args) {
+		int[] table = {1,2,3,4};
+		
+		System.out.println(tilStreng(table));
+	}
 
 	// a) Anders
 	public static void skrivUt(int[] tabell) {
@@ -12,9 +17,17 @@ public class Tabeller {
 
 	// b) Fredrik
 	public static String tilStreng(int[] tabell) {
-
-		// TODO
-		throw new UnsupportedOperationException("tilStreng ikke implementert");
+		String tekst= "[";
+		for (int i=0; i<tabell.length; i++) {
+			tekst=tekst + tabell[i];
+			
+			if (i!=tabell.length-1) {
+				tekst=tekst + ",";
+			}
+		}
+		tekst=tekst + "]";
+		return tekst;
+		
 		
 	}
 
