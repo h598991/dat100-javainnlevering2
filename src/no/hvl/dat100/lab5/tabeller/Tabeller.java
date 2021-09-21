@@ -8,6 +8,8 @@ public class Tabeller {
 		System.out.println(tilStreng(table));
 		System.out.println(posisjonTall(table, 3));
 		System.out.println(tilStreng(settSammen(table, table2)));
+		System.out.println(summer(table));
+		System.out.println(reverser(table));
 	}
 
 	// a) Anders
@@ -82,7 +84,14 @@ public class Tabeller {
 
 	// f) Sivert
 	public static int[] reverser(int[] tabell) {
-		
+		int [] nyTabell = new int [tabell.length];
+		for (int i=0; i<tabell.length/2; i++) {
+			int reverse = tabell[i];
+			tabell[i]=tabell[tabell.length-i-1];
+			tabell[tabell.length-i-1]=reverse;
+			
+		}
+		return tabell;
 	}
 
 	// g) Anders
