@@ -37,7 +37,10 @@ public class Tabeller {
 	// c) Sivert
 	public static int summer(int[] tabell) {
 		int sum = 0;
-		
+		for (int i: tabell) {
+			sum += i;
+		}
+		return sum;
 		
 //		int i = 0;
 //		while (i<tabell.length) {
@@ -47,7 +50,7 @@ public class Tabeller {
 //		return sum;
 		
 //		for (int i=0; i<tabell.length; i++) {
-//		sum = tabell[i];
+//		sum += tabell[i];
 //	} 
 //	return sum;
 
@@ -79,9 +82,6 @@ public class Tabeller {
 
 	// f) Sivert
 	public static int[] reverser(int[] tabell) {
-
-		// TODO
-		throw new UnsupportedOperationException("reverser ikke implementert");
 		
 	}
 
