@@ -14,11 +14,9 @@ public class Tabeller {
 
 	// a) Anders
 	public static void skrivUt(int[] tabell) {
-
-		int [] tabell1 = {1,2,7,8,9,10};
 		
-		for (int i=0; i<6; i++) {
-			System.out.print(tabell1[i] + ",");
+		for (int i=0; i<4; i++) {
+			System.out.print(tabell[i] + ",");
 		}
 
 	}
