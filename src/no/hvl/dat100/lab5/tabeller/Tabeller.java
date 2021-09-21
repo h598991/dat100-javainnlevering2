@@ -62,9 +62,21 @@ public class Tabeller {
 	// d) Anders
 	public static boolean finnesTall(int[] tabell, int tall) {
 
-		// TODO
-		throw new UnsupportedOperationException("finnesTall ikke implementert");
+		boolean funnet = false;
+
+		int i = 0;
+		while (!funnet && i < tabell.length) {
+
+			if (tabell[i] == tall) {
+				funnet = true;
+			}
+
+			i++;
+		}
+		return funnet;
+
 	}
+
 
 	// e) Fredrik
 	public static int posisjonTall(int[] tabell, int tall) {
