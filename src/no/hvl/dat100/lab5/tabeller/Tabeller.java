@@ -3,9 +3,11 @@ package no.hvl.dat100.lab5.tabeller;
 public class Tabeller {
 	public static void main(String[] args) {
 		int[] table = {1,2,3,4};
+		int[] table2 = {5,6,7,8};
 		
 		System.out.println(tilStreng(table));
 		System.out.println(posisjonTall(table, 3));
+		System.out.println(tilStreng(settSammen(table, table2)));
 	}
 
 	// a) Anders
@@ -81,7 +83,15 @@ public class Tabeller {
 	// h) Fredrik
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
 
-		// TODO
-		throw new UnsupportedOperationException("settSammen ikke implementert");
+		int[] newTable = new int[tabell1.length + tabell2.length];
+		int i;
+		for (i=0; i<tabell1.length; i++) {
+			newTable[i] = tabell1[i];
+		}
+		for (int j=0; j<tabell2.length; j++) {
+			newTable[i]=tabell2[j];
+			i++;
+		}
+		return newTable;
 	}
 }
