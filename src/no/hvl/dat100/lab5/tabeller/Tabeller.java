@@ -15,8 +15,11 @@ public class Tabeller {
 	// a) Anders
 	public static void skrivUt(int[] tabell) {
 
-		// TODO
-		throw new UnsupportedOperationException("skrivUt ikke implementert");
+		int [] tabell1 = {1,2,7,8,9,10};
+		
+		for (int i=0; i<6; i++) {
+			System.out.print(tabell1[i] + ",");
+		}
 
 	}
 
