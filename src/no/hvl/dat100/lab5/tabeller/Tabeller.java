@@ -95,14 +95,22 @@ public class Tabeller {
 
 	// f) Sivert
 	public static int[] reverser(int[] tabell) {
+<<<<<<< Updated upstream
 		int[] nyTabell = new int[tabell.length];
 		for (int i = 0; i < tabell.length / 2; i++) {
 			int reverse = tabell[i];
 			tabell[i] = tabell[tabell.length - i - 1];
 			tabell[tabell.length - i - 1] = reverse;
 
+=======
+		int [] nyTabell = new int [tabell.length];
+		for (int i=0; i<tabell.length/2; i++) {
+			nyTabell[i]=tabell[tabell.length-i-1];
+			
+			
+>>>>>>> Stashed changes
 		}
-		return tabell;
+		return nyTabell;
 	}
 
 	// g) Anders, som kan avgjere om ein array (tabell) av heiltal er sortert
