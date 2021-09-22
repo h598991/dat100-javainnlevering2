@@ -15,7 +15,7 @@ public class Tabeller {
 	// a) Anders
 	public static void skrivUt(int[] tabell) {
 
-		for (int i = 0; i < 4; i++) {
+		for (int i = 0; i < tabell.length; i++) {
 			System.out.print(tabell[i] + ",");
 		}
 
