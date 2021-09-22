@@ -9,7 +9,7 @@ public class Tabeller {
 		System.out.println(posisjonTall(table, 3));
 		System.out.println(tilStreng(settSammen(table, table2)));
 		System.out.println(summer(table));
-		System.out.println(reverser(table));
+		System.out.println(tilStreng(reverser(table)));
 	}
 
 	// a) Anders
