@@ -109,16 +109,17 @@ public class Tabeller {
 	// stigande
 	public static boolean erSortert(int[] tabell) {
 
-		boolean rekkefolge = true;
-
+		boolean rekkefolge=true;
+		
 		int i = 1;
-		while (rekkefolge && i < tabell.length) {
-			if (tabell[i - 1] <= tabell[i])
-				i++;
-			else
+		while(rekkefolge && i<tabell.length) {
+			if (tabell[i] <= tabell[i-1]) {
 				rekkefolge = false;
+			}
+				i++;
 		}
 		return rekkefolge;
+		
 
 	}
 
