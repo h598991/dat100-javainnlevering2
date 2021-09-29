@@ -4,34 +4,44 @@ public class Matriser {
 	
 	public static void main(String[] args) {
 	int[][] matrise = new int[][] {
-		{1,2,3},{4,5,6},{7,8,9}
+		{1,2,3},{4,5,6}
 	};
 	
 	int[][] matriseTo = new int[][] {
-		{1,2,3},{4,5,6},{7,8,9}
+		{7,8},{9,10},{11,12}
 	};
+	int[][] matriseSymbol = new int[][] {
+		{0,0,1,1,1,1,0,0},
+		{0,1,0,0,0,0,1,0},
+		{0,1,0,0,0,0,1,0},
+		{0,0,1,1,1,1,0,0},
+		{0,1,0,0,0,0,1,0},
+		{0,1,0,0,0,0,1,0},
+		{0,1,0,0,0,0,1,0},
+		{0,0,1,1,1,1,0,0},
+	};
+	
 	skrivUt(matrise);
-<<<<<<< Updated upstream
+	System.out.println();
+	skrivUt(speile(matriseSymbol));
+
 	System.out.println(erLik(matrise, matriseTo));
-=======
-	System.out.println(tilStreng(matrise));
->>>>>>> Stashed changes
+
+	//System.out.println(tilStreng(matrise));
+	
+	skrivUt(multipliser(matrise,matriseTo));
+
 	}
 	
 	// a)Fredrik
 	public static void skrivUt(int[][] matrise) {
 		
 		for (int[] v:matrise) {
-			System.out.print("{");
 			int i=0;
 			for(int w:v) {
-				System.out.print(w);
-				if (i!=v.length-1) {
-					System.out.print(" ");
-				}
-				i++;
+				System.out.print(" " + w);
 			}
-			System.out.println("}");
+			System.out.println();
 		}
 	}
 
@@ -89,16 +99,40 @@ public class Matriser {
 	// e)
 	public static int[][] speile(int[][] matrise) {
 
-		// TODO
-		throw new UnsupportedOperationException("speile ikke implementert");
+		int[][] speil =new int[matrise.length][matrise[0].length];
+		
+		for (int i=0; i<matrise.length; i++) {
+			for(int j=0; j<matrise[i].length; j++) {
+				speil[j][i]=matrise[i][j];
+			}
+		}
+		return speil;
 	
 	}
 
 	// f)
 	public static int[][] multipliser(int[][] a, int[][] b) {
 
-		// TODO
-		throw new UnsupportedOperationException("multipliser ikke implementert");
+		if(a[0].length==b.length) {
+			int[][] table=new int[a.length][a.length];
+			
+			for (int i=0; i<a.length; i++) {
+				for (int j=0; j<a.length;j++) {
+					int sum=0;
+					
+					for (int k=0; k<a[i].length;k++) {
+						sum=sum + (a[i][k]*b[k][j]);
+					}
+					
+					table[i][j]=sum;
+				}
+			}
+			
+			return table;
+			
+		}else{
+			return null;
+		}
 	
 	}
 }
