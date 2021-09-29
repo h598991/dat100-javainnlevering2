@@ -53,7 +53,6 @@ public class Matriser {
 			for (int j=0; j<matrise[i].length; j++) {
 				streng = streng + matrise[i][j];
 			}
-			streng = streng;
 		}
 		return streng;
 	}
