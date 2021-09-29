@@ -27,7 +27,7 @@ public class Matriser {
 
 	System.out.println(erLik(matrise, matriseTo));
 
-	//System.out.println(tilStreng(matrise));
+	System.out.println(tilStreng(matrise));
 	
 	skrivUt(multipliser(matrise,matriseTo));
 
