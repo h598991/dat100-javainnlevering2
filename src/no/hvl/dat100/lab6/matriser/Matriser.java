@@ -26,11 +26,11 @@ public class Matriser {
 	System.out.println("b)");
 	System.out.println(tilStreng(matrise));
 	
-	System.out.println("c)");
-	skrivUt(speile(matriseSymbol));
-	
 	System.out.println("d)");
 	System.out.println(erLik(matrise, matriseTo));
+	
+	System.out.println("e)");
+	skrivUt(speile(matriseSymbol));
 	
 	System.out.println("f)");
 	skrivUt(multipliser(matrise,matriseTo));
