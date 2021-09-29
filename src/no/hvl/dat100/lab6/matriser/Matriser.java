@@ -1,12 +1,27 @@
 package no.hvl.dat100.lab6.matriser;
 
 public class Matriser {
-
+	
+	public static void main(String[] args) {
+	int[][] matrise = new int[][] {
+		{1,2,3},{4,5,6},{7,8,9}
+	};
+	skrivUt(matrise);
+	}
+	
 	// a)Fredrik
 	public static void skrivUt(int[][] matrise) {
 		
-		// TODO
-		throw new UnsupportedOperationException("skrivUt ikke implementert");
+		for (int i=0; i<matrise.length; i++) {
+			System.out.print("{");
+			for(int j=0; j<matrise[i].length; j++) {
+				System.out.print(matrise[i][j]);
+				if(j!=matrise[i].length-1) {
+					System.out.print(",");
+				}
+			}
+			System.out.println("}");
+		}
 	}
 
 	// b)sivert
