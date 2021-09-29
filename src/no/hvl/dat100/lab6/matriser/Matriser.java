@@ -6,19 +6,26 @@ public class Matriser {
 	int[][] matrise = new int[][] {
 		{1,2,3},{4,5,6},{7,8,9}
 	};
+	
+	int[][] matriseTo = new int[][] {
+		{1,2,3},{4,5,6},{7,8,9}
+	};
 	skrivUt(matrise);
+	System.out.println(erLik(matrise, matriseTo));
 	}
 	
 	// a)Fredrik
 	public static void skrivUt(int[][] matrise) {
 		
-		for (int i=0; i<matrise.length; i++) {
+		for (int[] v:matrise) {
 			System.out.print("{");
-			for(int j=0; j<matrise[i].length; j++) {
-				System.out.print(matrise[i][j]);
-				if(j!=matrise[i].length-1) {
-					System.out.print(",");
+			int i=0;
+			for(int w:v) {
+				System.out.print(w);
+				if (i!=v.length-1) {
+					System.out.print(" ");
 				}
+				i++;
 			}
 			System.out.println("}");
 		}
@@ -42,9 +49,29 @@ public class Matriser {
 
 	// d)Fredrik
 	public static boolean erLik(int[][] a, int[][] b) {
-
-		// TODO
-		throw new UnsupportedOperationException("erLik ikke implementert");
+		boolean erLik=true;
+		int i=0;
+		
+		if(a.length!=b.length) {
+			return false;
+		}
+		
+		while (erLik && i<a.length) {
+			int j=0;
+			
+			if(a[i].length!=b[i].length) {
+				return false;
+			}
+			
+			while(erLik && j<a[i].length) {
+				if(a[i][j]!=b[i][j]) {
+					erLik=false;
+				}
+				j++;
+			}
+			i++;
+		}
+		return erLik;
 	}
 	
 	// e)
