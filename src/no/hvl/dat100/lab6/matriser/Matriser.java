@@ -11,7 +11,11 @@ public class Matriser {
 		{1,2,3},{4,5,6},{7,8,9}
 	};
 	skrivUt(matrise);
+<<<<<<< Updated upstream
 	System.out.println(erLik(matrise, matriseTo));
+=======
+	System.out.println(tilStreng(matrise));
+>>>>>>> Stashed changes
 	}
 	
 	// a)Fredrik
@@ -33,10 +37,18 @@ public class Matriser {
 
 	// b)sivert
 	public static String tilStreng(int[][] matrise) {
-
-		// TODO
-		throw new UnsupportedOperationException("tilStreng ikke implementert");
-		
+		String streng="[";
+		for (int i=0; i<matrise.length; i++) {
+			streng = streng + matrise[i];
+			if (i != matrise.length - 1) {
+				streng = streng + ",";
+			}
+			for (int j=0; j<matrise[i].length; j++) {
+				streng = streng + matrise[j];
+			}
+		}
+		streng = streng + "]";
+		return streng;
 	}
 
 	// c)Anders
