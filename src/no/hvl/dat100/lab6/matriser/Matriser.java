@@ -20,15 +20,19 @@ public class Matriser {
 		{0,1,0,0,0,0,1,0},
 		{0,0,1,1,1,1,0,0},
 	};
-	
+	System.out.println("a)");
 	skrivUt(matrise);
-	System.out.println();
-	skrivUt(speile(matriseSymbol));
-
-	System.out.println(erLik(matrise, matriseTo));
-
+	
+	System.out.println("b)");
 	System.out.println(tilStreng(matrise));
 	
+	System.out.println("c)");
+	skrivUt(speile(matriseSymbol));
+	
+	System.out.println("d)");
+	System.out.println(erLik(matrise, matriseTo));
+	
+	System.out.println("f)");
 	skrivUt(multipliser(matrise,matriseTo));
 
 	}
