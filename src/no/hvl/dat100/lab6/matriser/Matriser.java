@@ -2,14 +2,14 @@ package no.hvl.dat100.lab6.matriser;
 
 public class Matriser {
 
-	// a)
+	// a)Fredrik
 	public static void skrivUt(int[][] matrise) {
 		
 		// TODO
 		throw new UnsupportedOperationException("skrivUt ikke implementert");
 	}
 
-	// b)
+	// b)sivert
 	public static String tilStreng(int[][] matrise) {
 
 		// TODO
@@ -17,7 +17,7 @@ public class Matriser {
 		
 	}
 
-	// c)
+	// c)Anders
 	public static int[][] skaler(int tall, int[][] matrise) {
 		
 		// TODO
@@ -25,7 +25,7 @@ public class Matriser {
 	
 	}
 
-	// d)
+	// d)Fredrik
 	public static boolean erLik(int[][] a, int[][] b) {
 
 		// TODO
