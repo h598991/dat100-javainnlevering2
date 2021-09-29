@@ -35,16 +35,14 @@ public class Matriser {
 
 	// b)sivert
 	public static String tilStreng(int[][] matrise) {
-		String streng="}";
+		String streng="";
 		for (int i=0; i<matrise.length; i++) {
+			streng = streng + "\n" + "{";
 			for (int j=0; j<matrise[i].length; j++) {
-				if (j<i) {
-					streng = streng + "}" + "\n" + "{";
-				}
 				streng = streng + matrise[i][j];
 			}
+			streng = streng + "}";
 		}
-		streng = streng + "}";
 		return streng;
 	}
 
