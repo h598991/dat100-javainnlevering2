@@ -37,11 +37,11 @@ public class Matriser {
 	public static String tilStreng(int[][] matrise) {
 		String streng="";
 		for (int i=0; i<matrise.length; i++) {
-			streng = streng + "\n" + "{";
+			streng = streng + "\n";
 			for (int j=0; j<matrise[i].length; j++) {
 				streng = streng + matrise[i][j];
 			}
-			streng = streng + "}";
+			streng = streng;
 		}
 		return streng;
 	}
