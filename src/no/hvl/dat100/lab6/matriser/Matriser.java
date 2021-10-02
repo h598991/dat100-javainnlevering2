@@ -55,7 +55,7 @@ public class Matriser {
 		for (int i=0; i<matrise.length; i++) {
 		
 			for (int j=0; j<matrise[i].length; j++) {
-				streng = streng + matrise[i][j];
+				streng = streng +  matrise[i][j] + " ";
 			}
 			streng = streng + "\n";
 		}
