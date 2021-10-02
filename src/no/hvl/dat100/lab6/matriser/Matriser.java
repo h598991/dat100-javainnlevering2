@@ -70,8 +70,8 @@ public class Matriser {
 		
 		int[][] skalert = new int[matrise.length][matrise[0].length];
 		
-		for(i = 0; i<matrise.length; i++) 
-			for(j = 0; j<matrise[i].length; j++);{
+		for(i = 0; i<skalert.length; i++) 
+			for(j = 0; j<skalert[0].length; j++);{
 				skalert[i][j]=matrise[i][j]*tall;
 			}
 			
