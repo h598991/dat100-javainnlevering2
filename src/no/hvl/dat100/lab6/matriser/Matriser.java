@@ -65,9 +65,18 @@ public class Matriser {
 	// c)Anders
 	public static int[][] skaler(int tall, int[][] matrise) {
 		
-		// TODO
-		throw new UnsupportedOperationException("skaler ikke implementert");
-	
+		int i = 0;
+		int j =0;
+		
+		int[][] skalert = new int[matrise.length][matrise[0].length];
+		
+		for(i = 0; i<matrise.length; i++) 
+			for( j = 0; j<matrise.length; j++);{
+				skalert[i][j]=skalert[i][j]*tall;
+			}
+			
+			
+			return skalert;
 	}
 
 	// d)Fredrik
