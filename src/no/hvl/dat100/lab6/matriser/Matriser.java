@@ -65,19 +65,22 @@ public class Matriser {
 	// c)Anders
 	public static int[][] skaler(int tall, int[][] matrise) {
 		
-		int j = 0;
-		int i = 0;
+		int r = 0;
+		int p = 0;
 		
 		int[][] skalert = new int[matrise.length][matrise[0].length];
 		
-		for(i = 0; i<skalert.length; i++) 
-			for(j = 0; j<skalert[0].length; j++);{
-				skalert[i][j]=matrise[i][j]*tall;
-			}
+		for(r = 0; r<matrise.length; r++) {
 			
+			for(p = 0; p<matrise[r].length; p++) {
+				
+				skalert[r][p]=matrise[r*tall][p*tall];
+			}
+		}
 			
 			return skalert;
 	}
+	
 
 	// d)Fredrik
 	public static boolean erLik(int[][] a, int[][] b) {
