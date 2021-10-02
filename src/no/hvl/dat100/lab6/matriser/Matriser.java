@@ -64,21 +64,18 @@ public class Matriser {
 
 	// c)Anders
 	public static int[][] skaler(int tall, int[][] matrise) {
-		
-		int r = 0;
-		int p = 0;
-		
-		int[][] skalert = new int[matrise.length][matrise[0].length];
-		
-		for(r = 0; r<matrise.length; r++) {
-			
-			for(p = 0; p<matrise[r].length; p++) {
-				
-				skalert[r][p]=matrise[r*tall][p*tall];
+
+			int[][] skalert = new int[matrise.length][matrise[0].length];
+
+			for (int r = 0; r < matrise.length; r++) {
+				for (int p = 0; p < matrise[r].length; p++) {
+					
+				skalert[r][p]=(skalert[r][p])*tall;
+
 			}
 		}
-			
 			return skalert;
+					
 	}
 	
 
