@@ -70,7 +70,7 @@ public class Matriser {
 			for (int r = 0; r < matrise.length; r++) {
 				for (int p = 0; p < matrise[r].length; p++) {
 					
-				skalert[r][p]=(skalert[r][p])*tall;
+				skalert[r][p]=(matrise[r][p])*tall;
 
 			}
 		}
